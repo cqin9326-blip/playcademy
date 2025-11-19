@@ -1,5 +1,5 @@
 body {
-  background-color: #edeef0;
+  background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
   line-height: 1.6;
@@ -19,21 +19,29 @@ body {
 }
 
 /* game selector */
+/* all button styles */
+.submitbtn a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .select-game, .submitbtn, .book-now {
-  display: inline-block;
+  display: block; 
+  margin: 10px auto 20px;
   text-align: center;
 
   padding: 10px 20px;
-  background-color: #363F52;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #22222260;
+  border-radius: 15px;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
-.select-game:hover {
-  background-color: #174FA6;
+.select-game:hover, .submitbtn:hover, .book-now:hover {
+  background-color: #363F52;
+  color: #fff;
+  border-radius: 20px;
   scale: 1.05;
   transition: ease-in-out 0.2s;
 }
@@ -49,7 +57,7 @@ body {
   width: 300px;
   z-index: 1;
   text-align: center;
-  background-color: #50484844;
+  background-color: #504848cf;
   border-radius: 15px;
   padding: 25px;
   margin-bottom: 40px;
@@ -59,7 +67,7 @@ body {
 .gameselector h2 {
   margin-bottom: 20px;
   font-weight: 600;
-  color: #1f2d3d;
+  color: #a1cafa;
 }
 
 .gameselector div {
@@ -85,4 +93,88 @@ body {
 .gameselector div.active {
   background-color: #d6ddff;
   border: 2px solid #C8BFE7;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 20px;
+  font-size: 38px;
+  font-weight: bold;
+  color: #e4e4e4;
+}
+
+/* coach session */
+.coach-example {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 15%;
+  grid-template-columns: repeat(4, 100px);
+  border-radius: 15px;
+  border: 1px solid #222;
+  background-color: #f2efef;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+}
+
+.coach-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: ease-in-out 0.2s;
+  width: 180px;
+}
+
+.coach-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+}
+
+.coach-picture {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coach-picture img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+
+
+/* event */
+.event-section {
+  padding: 20px;
+  border: 1px solid #222;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.event-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: ease-in-out 0.2s;
+}
+
+.event-card img{
+  width: 250px;
+  height: 150px;
 }

@@ -4,10 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const gameselector = document.querySelector(".gameselector");
     const games = document.querySelectorAll(".gameselector div");
     const submitBtn = document.querySelector(".submitbtn");
+    const closeBtn = document.getElementById("selector-close");
+
     let selectedGame = null;
+
+    closeBtn.addEventListener("click", () => {
+            gameselector.classList.toggle("invisible");
+            closeBtn.classList.toggle("invisible");
+        });
 
     gameselectbtn.addEventListener("click", () => {
             gameselector.classList.toggle("invisible");
+            closeBtn.classList.toggle("invisible");
         });
 
     
@@ -26,12 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     submitBtn.addEventListener("click", () => {
-          if(selectedGame){
-            alert(`You have selected: ${selectedGame}`);
-            gameselector.classList.toggle("invisible");
-          } else {
+          if(!selectedGame){
             alert("Please select a game before submitting.");
           }
-
+          if (selectedGame === "Valorant") window.location.href = "./fps.html";
+          if (selectedGame === "Fortnite") window.location.href = "./fps.html";
+          if (selectedGame === "League of Legends") window.location.href = "./moba.html";
+          if (selectedGame === "Dota 2") window.location.href = "./moba.html";
+          
     });
 });
