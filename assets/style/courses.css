@@ -25,7 +25,7 @@ body {
   color: inherit;
 }
 
-.select-game, .submitbtn, .book-now {
+.select-game, .submitbtn, .book-now, .backtomain {
   display: block; 
   margin: 10px auto 20px;
   text-align: center;
@@ -38,7 +38,7 @@ body {
   cursor: pointer;
 }
 
-.select-game:hover, .submitbtn:hover, .book-now:hover {
+.select-game:hover, .submitbtn:hover, .book-now:hover, .backtomain:hover {
   background-color: #363F52;
   color: #fff;
   border-radius: 20px;
@@ -177,4 +177,44 @@ body {
 .event-card img{
   width: 250px;
   height: 150px;
+}
+
+
+/* footer */
+.socialmedia:hover ~ .backtotop, .copyright:hover ~ .backtotop {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+footer  {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #000000a5;
+}
+
+.backtotop {
+  opacity: 0;
+  pointer-events: none;
+  transition: ease-in-out 0.3s ease;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.backtotop a {
+  text-decoration: none;
+  color: #000;
+  background-color: #e4e4e4;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.backtotop a:hover {
+  transform: scale(1.02);
+  color: blue;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 50%;
 }

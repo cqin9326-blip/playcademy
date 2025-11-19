@@ -42,5 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (selectedGame === "League of Legends") window.location.href = "./moba.html";
           if (selectedGame === "Dota 2") window.location.href = "./moba.html";
           
-    });
+    }); 
 });
+
+
