@@ -19,12 +19,12 @@ body {
 }
 
 /* game selector */
-.select-game, .submitbtn {
+.select-game, .submitbtn, .book-now {
   display: inline-block;
   text-align: center;
 
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #363F52;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -33,7 +33,7 @@ body {
 }
 
 .select-game:hover {
-  background-color: #1e4fc4;
+  background-color: #174FA6;
   scale: 1.05;
   transition: ease-in-out 0.2s;
 }
@@ -71,7 +71,7 @@ body {
   border-radius: 10px;
   margin-bottom: 12px;
   cursor: pointer;
-  transition: background-color .25s ease;
+  transition:ease-in-out 0.15s;
 }
 
 .gameselector div:hover {
@@ -84,6 +84,5 @@ body {
 
 .gameselector div.active {
   background-color: #d6ddff;
-  border: 2px solid #2864f0;
-  transform: scale(1.02);
+  border: 2px solid #C8BFE7;
 }
