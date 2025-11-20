@@ -1,4 +1,6 @@
-// game slection
+'use strict';
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const gameselectbtn = document.querySelector(".select-game");
     const gameselector = document.querySelector(".gameselector");

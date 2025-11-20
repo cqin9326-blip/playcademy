@@ -11,6 +11,76 @@ body {
   box-sizing: border-box;
 }
 
+/* banners */
+.banner {
+  position: relative;
+  padding: 60px 40px;
+  border-radius: 15px;
+  color: #fff;
+  height: 600px;
+  width: 100%;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  background: url("../media/videogamebackground.png") no-repeat center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.moba-banner {
+  position: relative;
+  padding: 60px 40px;
+  border-radius: 15px;
+  color: #fff;
+  height: 600px;
+  width: 100%;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+.moba-banner::before {
+  content: "";
+  position: absolute;
+  background: url("../media/leaguebackground.png") no-repeat center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.fps-banner {
+  position: relative;
+  padding: 60px 40px;
+  border-radius: 15px;
+  color: #fff;
+  height: 600px;
+  width: 100%;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+.fps-banner::before {
+  content: "";
+  position: absolute;
+  background: url("../media/valorantbackground.png") no-repeat center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
 /* container */
 .coursecontainer {
   width: min(100% - 30px, 1080px);
@@ -116,8 +186,15 @@ body {
   gap: 20px;
 }
 
+#coach-wrapper {
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
 #coach-wrapper.collapsed {
-  max-height: 300px;
+  max-height: 300px; 
   overflow: hidden;
 }
 
@@ -131,6 +208,7 @@ body {
   border: 1px solid #000;
   border-radius: 15px;
   place-content: center;
+  justify-content: center;
   grid-template-columns: repeat(4, 200px);
   gap: 20px;
   padding: 10px 0;
@@ -142,6 +220,7 @@ body {
   background-color: #fff;
   border-radius: 15px;
   padding: 15px;
+  margin-top: 60px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: ease-in-out 0.2s;
@@ -166,7 +245,12 @@ body {
   margin-bottom: 15px;
 }
 
-
+.view-more {
+  height: 40px;
+  grid-column: 1 / -1;
+  width: max-content;
+  justify-self: center;
+}
 
 /* event */
 .event-section {

@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.getElementById("coach-wrapper");
 
   const icons = [
-    "./assets/media/valoranticon.png",
-    "./assets/media/fortniteicon.png"
+    "./assets/media/lolicon.png",
+    "./assets/media/dotaicon.png"
   ];
 
   const sessiontype = [
