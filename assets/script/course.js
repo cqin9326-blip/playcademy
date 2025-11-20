@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const games = document.querySelectorAll(".gameselector div");
     const submitBtn = document.querySelector(".submitbtn");
     const closeBtn = document.getElementById("selector-close");
+    const loginclose = document.getElementById("login-close");
+    const profile = document.querySelector(".profile");
+    const login = document.querySelector(".login");
 
     let selectedGame = null;
 
@@ -20,6 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
             closeBtn.classList.toggle("invisible");
         });
 
+    profile.addEventListener("click", () => {
+        login.classList.toggle("invisible");
+        loginclose.classList.toggle("invisible");
+    })
+
+    loginclose.addEventListener("click", () => {
+        login.classList.toggle("invisible");
+        loginclose.classList.toggle("invisible");
+    })
     
 
     games.forEach(option => {
