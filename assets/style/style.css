@@ -291,6 +291,67 @@ footer  {
   transition: all 0.3s ease-in-out;
 }
 
+/* login */
+.profile {
+  cursor: pointer;
+}
+
+.login {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  width: 400px;
+  z-index: 1;
+  text-align: center;
+  background-color: #504848cf;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invisible {
+  display: none;
+}
+
+.login p {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #a1cafa;
+}
+
+.login div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #818181;
+  padding: 12px;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition:ease-in-out 0.15s;
+}
+
+.login div:hover {
+  background-color: #9b9999;
+}
+
+.login input[type="text"], input[type="password"] {
+  background-color: #c3ccdf;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 20px;
+  font-size: 38px;
+  font-weight: bold;
+  color: #e4e4e4;
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 20px;
