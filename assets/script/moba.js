@@ -72,4 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "./courses.html";
     });
   }
+
+  const backtotopbtn = document.querySelector(".backtotop");
+  const mobabanner = document.getElementById("mobabanner");
+  mobabanner.addEventListener("mouseenter", () => {
+    backtotopbtn.classList.add("off");
+  });
+  mobabanner.addEventListener("mouseleave", () => {
+    backtotopbtn.classList.remove("off");
+  })
 });

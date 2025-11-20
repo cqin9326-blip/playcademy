@@ -45,6 +45,15 @@ document.addEventListener("DOMContentLoaded", () => {
           if (selectedGame === "Dota 2") window.location.href = "./moba.html";
           
     }); 
+
+  const backtotopbtn = document.querySelector(".backtotop");
+  const banner = document.getElementById("banner");
+  banner.addEventListener("mouseenter", () => {
+    backtotopbtn.classList.add("off");
+  });
+  banner.addEventListener("mouseleave", () => {
+    backtotopbtn.classList.remove("off");
+  })
 });
 
 
