@@ -72,4 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "./courses.html";
     });
   }
+
+  const backtotopbtn = document.querySelector(".backtotop");
+  const fpsbanner = document.getElementById("fpsbanner");
+  fpsbanner.addEventListener("mouseenter", () => {
+    backtotopbtn.classList.add("off");
+  });
+  fpsbanner.addEventListener("mouseleave", () => {
+    backtotopbtn.classList.remove("off");
+  })
 });

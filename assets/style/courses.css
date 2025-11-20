@@ -284,10 +284,6 @@ body {
 
 
 /* footer */
-.socialmedia:hover ~ .backtotop, .copyright:hover ~ .backtotop {
-  opacity: 1;
-  pointer-events: auto;
-}
 
 footer  {
   text-align: center;
@@ -296,13 +292,19 @@ footer  {
   border-top: 1px solid #000000a5;
 }
 
-.backtotop {
+.backtotop.off {
   opacity: 0;
   pointer-events: none;
-  transition: ease-in-out 0.3s ease;
+}
+
+.backtotop {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s ease-in-out;
   position: fixed;
   bottom: 30px;
   right: 30px;
+  border-radius: 50%;
 }
 
 .backtotop a {
@@ -320,4 +322,5 @@ footer  {
   background-color: #222;
   padding: 10px;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
