@@ -18,7 +18,7 @@
         
       </header>
        <main>
-        <div class="root">
+        <div class="coursecontainer">
           <div class="banner">
             <h1>Main Course >>> FPS</h1>
             <h1>First-Person Shooter (FPS) Games</h1>
@@ -27,56 +27,11 @@
         </div>
           <button class="backtomain">Back to Main Course</button>
           <!-- coach example -->
-          <h2>Available Coaches</h2>
-          <section class="coach-example">
-            <div class="coach-card">
-              <div class="coach-picture">
-                <img src="./assets/media/pfp1.png" alt="Coach 1 image">
-                <img src="./assets/media/lolicon.png">
-              </div>
-              <h3>league-coach-1</h3>
-              <p>Rating: 10.0</p>
-              <p>1 Session: 1 hr</p>
-              <p>Price: $20</p>
-              <button class="book-now">Book Now</button>
-            </div>
-
-            <div class="coach-card">
-              <div class="coach-picture">
-                <img src="./assets/media/pfp2.png" alt="Coach 1 image">
-                <img src="./assets/media/valoranticon.png">
-              </div>
-              <h3>valorant-coach-1</h3>
-              <p>Rating: 9.8</p>
-              <p>1 Session: 1.5 hr</p>
-              <p>Price: $30</p>
-              <button class="book-now">Book Now</button>
-            </div>
-
-            <div class="coach-card">
-              <div class="coach-picture">
-                <img src="./assets/media/pfp3.jpg" alt="Coach 1 image">
-                <img src="./assets/media/fortniteicon.png">
-              </div>
-              <h3>fortnite-coach-1</h3>
-              <p>Rating: 9.9</p>
-              <p>1 Session: 1 hr</p>
-              <p>Price: $22</p>
-              <button class="book-now">Book Now</button>
-            </div>
-
-            <div class="coach-card">
-              <div class="coach-picture">
-                <img src="./assets/media/pfp4.png" alt="Coach 1 image">
-                <img src="./assets/media/dotaicon.png">
-              </div>
-              <h3>dota-coach-1</h3>
-              <p>Rating: 9.5</p>
-              <p>1 Session: 1 hr</p>
-              <p>Price: $40</p>
-              <button class="book-now">Book Now</button>
-            </div>
-          </section>
+          <div class="coursecontainer"></div>
+            <h2>Browse Coaches</h2>
+            <button id="viewallbtn" class="view-all">View All</button>
+            <section id="coach-wrapper" class="coachgrid collapsed"></section>
+          </div>
 
           <!-- event -->
           <h2>Upcoming Events</h2>
