@@ -1,0 +1,299 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: white;
+    min-height: 100vh;
+    padding: 0;}
+
+.navbar {
+    background: #1a202c;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-placeholder {
+    width: 50px;
+    height: 50px;
+    background:#764ba2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.brand-name {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Banner Section */
+.hero-banner {
+    width: 100%;
+    height: 400px;
+    background:#764ba2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../media/image/background-Herobanner.jpg') no-repeat bottom;
+    background-size: cover;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+.main-wrapper {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.about-section {
+    padding: 60px 50px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.about-section h1 {
+    font-size: 40px;
+    color: #2d3748;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.about-section p {
+    font-size: 30px;
+    line-height: 1.8;
+    color: #4a5568;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.divider {
+    height: 5px;
+    background: pink;
+    margin: 0;
+}
+
+.contact-section {
+    padding: 60px 50px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.contact-section h2 {
+    font-size: 40px;
+    color: #2d3748;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-item {
+    background: #f7fafc;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    border: 2px solid #e2e8f0;
+}
+
+.contact-item:hover {
+    transform: translateY(-20px);
+}
+
+.contact-item i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+.contact-item h3 {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #718096;
+    font-size: 15px;
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.address-box {
+    background: #F7FAFC;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.address-box strong {
+    font-size: 30px;
+}
+
+.side-nav {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 1000;
+}
+
+.side-nav button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.side-nav button:hover {
+    background: #764ba2;
+    transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .brand-name {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .hero-banner {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .about-section, .contact-section {
+        padding: 40px 30px;
+    }
+
+    .about-section h1, .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container {
+        height: 350px;
+    }
+}
